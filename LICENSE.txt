@@ -1,5 +1,0 @@
-LICENSE.txt
-    把你放到工作区learn-git里面。
-
-工作区                      暂存区              提交
-learn-git   git add 到  .git/stage(index)   git commit    
