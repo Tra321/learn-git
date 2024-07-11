@@ -1,0 +1,2 @@
+LICENSE.txt
+把你放到工作区learn-git里面。

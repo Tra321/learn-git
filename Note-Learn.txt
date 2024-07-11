@@ -29,3 +29,8 @@ $ git reset --hard HEAD^ //回到上一个版本
 $ git reset --hard 0d1792 //回到0d1792版本
 
 $ git reflog //显示每一次命令
+
+五、Git的工作区和暂存区的概念
+1、learn-git是工作区
+2、隐藏目录.git是Git的版本库
+    其中stage（index）叫暂存区
