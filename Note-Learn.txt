@@ -9,8 +9,11 @@ atraa0621@gmail.com
 $ cd /d/Download //切换路径
 $ pwd //显示当前目录
 $ ls -ah //查看隐藏的目录
+
 $ git status //查看仓库状态
 $ git diff //查看修改
+$ git log //查看历史记录
+$ git log --pretty=oneline //简化历史记录
 
 三、创建版本库
 $ mkdir learn-git //创建一个新目录
@@ -19,4 +22,10 @@ $ cd learn-git //进入目录
 $ git init //将该目录变成GIT管理的仓库
 
 $ git add Note-Learn.txt //把该文件添加到仓库
-$ git commit -m"Note_01_init" //将文件提交到仓库
+$ git commit -m "Note_01_init" //将文件提交到仓库
+
+四、时光穿梭机
+$ git reset --hard HEAD^ //回到上一个版本
+$ git reset --hard 0d1792 //回到0d1792版本
+
+$ git reflog //显示每一次命令
