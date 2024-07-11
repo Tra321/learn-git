@@ -7,6 +7,7 @@ atraa0621@gmail.com
 
 二、命令
 $ cd /d/Download //切换路径
+$ ls //列出当前目录下的文件夹和目录
 $ pwd //显示当前目录
 $ ls -ah //查看隐藏的目录
 
@@ -46,3 +47,8 @@ $ git reset HEAD <Note-Learn.txt> //把暂存区的修改撤回，放回工作�
 七、连接gitHub
 $ git remote add origin git@github.com:Tra321/learn-git.git //关联一个远程库
 $ git push -u origin master //推送master分支的所有内容
+
+八、从远程克隆库
+1、先在GitHub上创建一个新的仓库
+2、用git clone克隆一个本地库
+    $ git clone git@github.com:Tra321/gitskills.git //克隆一个本地库
