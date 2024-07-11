@@ -42,3 +42,7 @@ $ git reset HEAD <Note-Learn.txt> //把暂存区的修改撤回，放回工作�
 
 六、Git管理的是修改，而不是文件
     然后就没有然后了
+
+七、连接gitHub
+$ git remote add origin git@github.com:Tra321/learn-git.git //关联一个远程库
+$ git push -u origin master //推送master分支的所有内容
