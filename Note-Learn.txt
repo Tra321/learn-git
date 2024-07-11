@@ -15,6 +15,8 @@ $ git diff //查看修改
 $ git log //查看历史记录
 $ git log --pretty=oneline //简化历史记录
 
+$ git checkout //切换到里一个分支
+
 三、创建版本库
 $ mkdir learn-git //创建一个新目录
 $ cd learn-git //进入目录
@@ -29,6 +31,9 @@ $ git reset --hard HEAD^ //回到上一个版本
 $ git reset --hard 0d1792 //回到0d1792版本
 
 $ git reflog //显示每一次命令
+
+$ git checkout -- Note-Learn.txt //把工作区的修改撤回
+$ git reset HEAD <Note-Learn.txt> //把暂存区的修改撤回，放回工作区
 
 五、Git的工作区和暂存区的概念
 1、learn-git是工作区
