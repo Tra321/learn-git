@@ -9,6 +9,8 @@ atraa0621@gmail.com
 $ cd /d/Download //切换路径
 $ pwd //显示当前目录
 $ ls -ah //查看隐藏的目录
+$ git status //查看仓库状态
+$ git diff //查看修改
 
 三、创建版本库
 $ mkdir learn-git //创建一个新目录
