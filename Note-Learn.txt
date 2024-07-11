@@ -1,0 +1,20 @@
+Note-Learn.txt
+一、姓名和邮箱
+$ git config --global user.name
+Atra
+$ git config --global user.email
+atraa0621@gmail.com
+
+二、命令
+$ cd /d/Download //切换路径
+$ pwd //显示当前目录
+$ ls -ah //查看隐藏的目录
+
+三、创建版本库
+$ mkdir learn-git //创建一个新目录
+$ cd learn-git //进入目录
+
+$ git init //将该目录变成GIT管理的仓库
+
+$ git add Note-Learn.txt //把该文件添加到仓库
+$ git commit -m"Note_01_init" //将文件提交到仓库
