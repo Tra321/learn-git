@@ -34,3 +34,5 @@ $ git reflog //显示每一次命令
 1、learn-git是工作区
 2、隐藏目录.git是Git的版本库
     其中stage（index）叫暂存区
+
+六、Git管理的是修改，而不是文件
