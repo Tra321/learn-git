@@ -163,3 +163,28 @@ Rebase
 
 忽略特殊文件
     .gitignore文件夹 放置特殊需要忽视的
+
+配置别名（快捷键）
+    $ git config --global alias.<缩写> <原名>
+
+    status ------- st
+    branch ------- br
+    checkout ----- co
+    commit ------- ci 
+
+    配置一个“unstage",执行“reset HEAD"
+    输入$ git unstage test.py
+    执行$ git reset HEAD test.py
+
+    配置一个“git last",让其显示最后一次提交信息
+
+    git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+    建议你自己多用用"git lg"
+
+配置文件
+    如果不加--global就是对当前仓库起作用
+    配置文件在.git/config里
+
+$cat .git/config
+
+将对应的[alias]中对应的删除即可
