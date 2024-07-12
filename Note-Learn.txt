@@ -116,3 +116,17 @@ $ git commit -m "add feature vulcan" //提交
 $ git switch dev 
 $ git branch -d feature-vulcan //删除分支
 $ git branch -D feature-vulcan //强行删除 
+
+多人协作
+
+$ git remote //查看远程库
+$ git remote -v //产看远程库详细信息
+抓取分支
+多人同时向origin/dev分支提交，推送失败，需要用git pull把最新的提交从origin/dev抓下来，在本地合并后再提交
+$ git checkout -b dev origin/dev //创建远程origin的分支dev到本地
+$ git push origin dev //像origin/dev推送自己的修改
+推送失败 
+若抓取显示 no tracking information
+$ git branch --set-upstream-to=origin/dev dev //指定本地dev分支与远程origin/dev分支的链接
+$ git pull //抓取 
+解决冲突后再push
