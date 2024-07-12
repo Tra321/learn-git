@@ -105,3 +105,14 @@ $ git stash list //查看stash内容
 $ git stash apply stash@{0} //恢复指定的stash
 
 $ git cherry-pick <commit> //复制一个特定的提交到当前分支
+
+Feature分支
+
+开发一个新的功能，开发完之后需要删除
+
+$ git switch -c feature-vulcan //新的分支用于新功能
+$ git add vulcan.py 
+$ git commit -m "add feature vulcan" //提交
+$ git switch dev 
+$ git branch -d feature-vulcan //删除分支
+$ git branch -D feature-vulcan //强行删除 
