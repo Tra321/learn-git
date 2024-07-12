@@ -83,3 +83,25 @@ master分支非常稳定，用于发布新版本
 合并好之后再更新版本到master上
 
 忘记改名字了
+
+Bug分支
+$ git stash //保护现场，不影响当前状态切换到其他分支近进行操作
+$ git checkout master //假设修复master分支上的bug
+$ git checkout -b issue-101 //从master上建立临时分支
+$ git add readme.txt 
+$ git commit -m "fix bug 101" //提交修复完成的
+$ git switch master 
+$ git merge --no-ff -m "merged bug fix 101" issue //完成合并
+$ git switch dev
+
+$ git stash list //查看stash内容
+
+ 恢复工作现场
+    1、$ git stash apply //恢复后satsh内容不删除
+        $ git stash drop //删除stash内容
+    2、$ git stash pop //恢复同时删除stash
+
+多次stash，用 git stash list 查看 
+$ git stash apply stash@{0} //恢复指定的stash
+
+$ git cherry-pick <commit> //复制一个特定的提交到当前分支
