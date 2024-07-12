@@ -81,3 +81,5 @@ $ git log --graph --pretty=oneline --abbrev-commit //查看分支历史
 master分支非常稳定，用于发布新版本
 团队在自己的分支上干活合并到dev分支上
 合并好之后再更新版本到master上
+
+忘记改名字了
