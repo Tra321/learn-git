@@ -55,9 +55,13 @@ $ git push -u origin master //推送master分支的所有内容
 
 九、分支管理
 $ git checkout -b dev //创建并且切换到dev分支
+$ git switch -c dev 
+$ git switch master //切换到已有的分支
+
 $ git branch //查看当前分支
 
 $ git add Note-Learn.txt
 $ git commit -m "branch test" //在分支dev上提交
 
-$ git checkout master
+$ git merge dev //合并dev中到master分支上
+$ git branch -d dev //删除dev
