@@ -65,3 +65,5 @@ $ git commit -m "branch test" //在分支dev上提交
 
 $ git merge dev //合并dev中到master分支上
 $ git branch -d dev //删除dev
+
+这有什么冲突
