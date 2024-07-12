@@ -68,6 +68,16 @@ $ git branch -d dev //删除dev
 
 $ git log graph //查看分支合并图 
 
-解决冲突就是先冲突再解决
+解决冲突
+
+先冲突，再解决
 
 又要创建新的dev，烦死了
+$ git merge --no-ff -m "merge with no-ff" dev //合并dev，--no-ff禁用Fast forward
+--no-ff参数用于普通合并，有历史分支，用于团队开发
+
+$ git log --graph --pretty=oneline --abbrev-commit //查看分支历史
+
+master分支非常稳定，用于发布新版本
+团队在自己的分支上干活合并到dev分支上
+合并好之后再更新版本到master上
