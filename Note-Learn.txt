@@ -160,3 +160,6 @@ Rebase
             先删除本地标签，在push到远程
         $ git tag -d <tagname>
         $ git push origin :refs/tags/<tagname>
+
+忽略特殊文件
+    .gitignore文件夹 放置特殊需要忽视的
