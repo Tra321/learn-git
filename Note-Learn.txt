@@ -69,3 +69,5 @@ $ git branch -d dev //删除dev
 $ git log graph //查看分支合并图 
 
 解决冲突就是先冲突再解决
+
+又要创建新的dev，烦死了
