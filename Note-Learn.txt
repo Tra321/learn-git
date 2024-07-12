@@ -130,3 +130,33 @@ $ git push origin dev //像origin/dev推送自己的修改
 $ git branch --set-upstream-to=origin/dev dev //指定本地dev分支与远程origin/dev分支的链接
 $ git pull //抓取 
 解决冲突后再push
+
+Rebase
+把分叉的提交历史“整理”成一条直线，看上去更直观。缺点是本地的分叉提交已经被修改过了
+
+标签管理
+    创建标签
+        $ git branch //切换到需要打标签的分支上
+        $ git tag <name> //打一个新标签
+        $ git tag //查看所有标签状态
+        
+        对历史版本打标签
+        $ git log --pretty=oneline --abbrev-commit //找到历史版本
+        $ git tag <name> <commit> //对相应的commit打标签
+
+        标签按照字母排序
+            $ git show <tagname> //查看标签信息和标签说明
+        创建带有说明的标签
+            $ git tag -a <tagname> -m "标签说明” <commit>
+
+    标签跟commit挂钩，如果commit出现在多个分支，在两个分支上都可以看到这个标签
+
+    操作标签
+        $ git tag -d <tagname> //删除标签
+        $ git push origin <tagname> //推送标签到远程
+        $ git push origin --tags //一次性推送全部标签到远程
+
+        删除远程标签
+            先删除本地标签，在push到远程
+        $ git tag -d <tagname>
+        $ git push origin :refs/tags/<tagname>
